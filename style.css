@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #faf8f2;
+    color: #222;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    background: #090909;
+    text-align: center;
+    padding: 25px 15px;
+    border-bottom: 1px solid #c9a227;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #d4af37;
+}
+
+header p {
+    color: #eeeeee;
+    margin-top: 8px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 430px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.72),
+            rgba(0,0,0,0.72)
+        ),
+        radial-gradient(
+            circle at center,
+            #5c4a16,
+            #111 65%
+        );
+
+    color: white;
+}
+
+.hero-content {
+    padding: 30px;
+}
+
+.small-title {
+    color: #d4af37;
+    letter-spacing: 4px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 58px;
+    letter-spacing: 8px;
+    color: #d4af37;
+    margin-bottom: 15px;
+}
+
+.hero p:not(.small-title) {
+    font-size: 18px;
+    color: #eeeeee;
+    margin-bottom: 30px;
+}
+
+
+/* EXPLORE BUTTON */
+
+.explore-btn {
+    padding: 14px 30px;
+
+    border: 1px solid #d4af37;
+    border-radius: 30px;
+
+    background: #d4af37;
+    color: #111;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.explore-btn:hover {
+    background: transparent;
+    color: #d4af37;
+}
+
+
+/* ================= CATEGORY ================= */
+
+.categories-section {
+    text-align: center;
+    padding: 50px 20px 30px;
+    background: white;
+}
+
+.section-small {
+    color: #a08320;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+}
+
+.categories-section h2,
+.collection h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+
+.categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.categories button {
+    background: white;
+
+    border: 1px solid #d4af37;
+
+    color: #333;
+
+    padding: 13px 22px;
+
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+.categories button:hover {
+    background: #d4af37;
+    color: white;
+    transform: translateY(-2px);
+}
+
+
+/* ================= COLLECTION ================= */
+
+.collection {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 55px 20px;
+}
+
+.collection h2 {
+    text-align: center;
+    color: #806515;
+}
+
+
+/* ================= PRODUCTS ================= */
+
+.products {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 25px;
+}
+
+
+/* CARD */
+
+.product {
+    background: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.10);
+
+    transition: 0.3s;
+
+    border: 1px solid #eee;
+}
+
+.product:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,0.18);
+}
+
+
+/* IMAGE */
+
+.product img {
+    width: 100%;
+
+    height: 270px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* INFO BUTTON */
+
+.info-btn {
+    display: block;
+
+    width: 88%;
+
+    margin: 15px auto 18px;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background: #111;
+
+    color: #d4af37;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.info-btn:hover {
+    background: #d4af37;
+    color: #111;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    text-align: center;
+
+    background: #090909;
+
+    color: white;
+
+    padding: 40px 20px;
+
+    border-top: 1px solid #d4af37;
+}
+
+.footer-logo {
+    color: #d4af37;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 12px;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 10px;
+}
+
+.whatsapp-footer {
+    margin-top: 15px;
+
+    padding: 12px 25px;
+
+    border: 1px solid #d4af37;
+
+    border-radius: 25px;
+
+    background: transparent;
+
+    color: #d4af37;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+.whatsapp-footer:hover {
+    background: #d4af37;
+    color: #111;
+}
+
+.copyright {
+    margin-top: 25px !important;
+
+    color: #888;
+
+    font-size: 12px !important;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+    .logo {
+        font-size: 23px;
+    }
+
+    .hero {
+        min-height: 380px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+        letter-spacing: 5px;
+    }
+
+    .hero p:not(.small-title) {
+        font-size: 15px;
+    }
+
+    .categories-section {
+        padding: 35px 12px 20px;
+    }
+
+    .categories button {
+        padding: 11px 16px;
+        font-size: 13px;
+    }
+
+    .collection {
+        padding: 40px 12px;
+    }
+
+    .collection h2 {
+        font-size: 25px;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .product img {
+        height: 190px;
+    }
+
+    .info-btn {
+        width: 90%;
+        padding: 10px 5px;
+        font-size: 12px;
+    }
+}

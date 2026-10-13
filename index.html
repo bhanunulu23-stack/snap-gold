@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Snap Gold | Jewellery Collection</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">✨ SNAP GOLD</div>
+        <p>Premium Gold Jewellery</p>
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">WELCOME TO</p>
+
+            <h1>SNAP GOLD</h1>
+
+            <p>
+                Discover Elegant Gold Jewellery Designs
+            </p>
+
+            <button
+                class="explore-btn"
+                onclick="scrollToCollection()">
+                Explore Collection
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORIES -->
+    <section class="categories-section">
+
+        <p class="section-small">OUR COLLECTION</p>
+
+        <h2>Choose Your Category</h2>
+
+        <div class="categories">
+
+            <button onclick="showCategory('earrings')">
+                💎 Earrings
+            </button>
+
+            <button onclick="showCategory('rings')">
+                💍 Rings
+            </button>
+
+            <button onclick="showCategory('chains')">
+                ⛓️ Chains
+            </button>
+
+            <button onclick="showCategory('bangles')">
+                ✨ Bangles
+            </button>
+
+            <button onclick="showCategory('necklaces')">
+                📿 Necklaces
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- COLLECTION -->
+    <section class="collection" id="collection">
+
+        <p class="section-small">SNAP GOLD</p>
+
+        <h2 id="categoryTitle">Earrings</h2>
+
+        <div
+            id="products"
+            class="products">
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+            ✨ SNAP GOLD
+        </div>
+
+        <p>
+            Elegant Designs • Quality Work • Trusted Service
+        </p>
+
+        <button
+            onclick="openWhatsApp()"
+            class="whatsapp-footer">
+            💬 Contact on WhatsApp
+        </button>
+
+        <p class="copyright">
+            © 2026 Snap Gold. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
